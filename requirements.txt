@@ -1,0 +1,6 @@
+# Core dependencies for GSV
+# The GSV architecture has no external dependencies by design
+# This makes it easy to integrate into any project
+
+# Development dependencies (optional)
+# Install with: pip install -r requirements-dev.txt
