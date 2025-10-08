@@ -1,0 +1,11 @@
+# GSV 2.0 - Global State Vector Framework
+# Core dependencies for running GSV 2.0
+
+# Numerical computation
+numpy>=1.20.0
+
+# Visualization
+matplotlib>=3.3.0
+
+# Scientific computing (for stability analysis)
+scipy>=1.6.0
