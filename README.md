@@ -3,6 +3,8 @@
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Python](https://img.shields.io/badge/Python-3.8+-green.svg)](https://www.python.org/)
 [![Status](https://img.shields.io/badge/Status-MVP-orange.svg)]()
+[![CI](https://github.com/dukeru115/GSV/workflows/CI/badge.svg)](https://github.com/dukeru115/GSV/actions)
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 
 > **Implementation of GSV 2.0 framework for strategic adaptation in autonomous agents**  
 > Based on: Urmanov, T., Gadeev, K., & Iusupov, B. (2025). *Global State Vector 2.0: Multi-Scale Control for Autonomous AI Agents*
@@ -52,21 +54,55 @@ S(t) = [SA(t), SE(t), SP(t), SS(t)]
 
 ## 🚀 Installation
 
-### Requirements
+### Quick Install (3 steps)
 
 ```bash
-pip install numpy matplotlib scipy
+# 1. Clone the repository
+git clone https://github.com/dukeru115/GSV.git
+cd GSV
+
+# 2. Install dependencies
+pip install -r requirements.txt
+
+# 3. Verify installation
+python gsv2_tests.py
 ```
+
+### Using pip (Alternative)
+
+```bash
+# Install from source
+pip install -e .
+
+# Or install specific dependencies
+pip install numpy>=1.20.0 matplotlib>=3.3.0 scipy>=1.6.0
+```
+
+For detailed installation instructions, see [INSTALL.md](INSTALL.md).
 
 ### Files Structure
 
 ```
-gsv2/
-├── gsv2_core.py              # Core GSV implementation
-├── gsv2_qlearning.py         # Q-learning integration
-├── gsv2_gridworld_demo.py    # Complete demonstration
-├── gsv2_analysis.py          # Stability analysis tools
-└── README.md                 # This file
+GSV/
+├── gsv2_core.py                # Core GSV implementation (SDE solver, metrics)
+├── gsv2_qlearning.py           # Q-learning integration wrapper
+├── gsv2_analysis.py            # Stability analysis & diagnostics
+├── gsv2_gridworld_demo.py      # Full demo (3000 episodes)
+├── gsv2_stress_demo.py         # Stress response scenario
+├── gsv2_experiments.py         # Parameter studies & ablations
+├── gsv2_tests.py               # Comprehensive test suite
+├── gsv2_quickstart.py          # Learning examples & patterns
+├── examples/                   # Simple usage examples
+│   ├── simple_example.py       # Minimal working example
+│   └── README.md
+├── requirements.txt            # Dependencies
+├── setup.py                    # Package setup
+├── pyproject.toml              # Modern Python packaging
+├── README.md                   # This file
+├── Summary.md                  # Complete implementation summary
+├── QUICKSTART.md               # 5-minute getting started guide
+├── INSTALL.md                  # Detailed installation guide
+└── CONTRIBUTING.md             # Contribution guidelines
 ```
 
 ---
