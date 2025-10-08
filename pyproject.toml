@@ -1,0 +1,61 @@
+[build-system]
+requires = ["setuptools>=45", "wheel", "setuptools_scm>=6.2"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gsv2"
+version = "2.0.0"
+description = "Global State Vector 2.0: Multi-Scale Control for Autonomous AI Agents"
+readme = "README.md"
+authors = [
+    {name = "Timur Urmanov", email = "urmanov.t@gmail.com"},
+    {name = "Kamil Gadeev", email = "gadeev.kamil@gmail.com"},
+    {name = "Bakhtier Iusupov", email = "usupovbahtiayr@gmail.com"}
+]
+license = {text = "MIT"}
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+keywords = ["reinforcement-learning", "meta-learning", "adaptive-systems", "stochastic-control", "autonomous-agents"]
+requires-python = ">=3.8"
+dependencies = [
+    "numpy>=1.20.0",
+    "matplotlib>=3.3.0",
+    "scipy>=1.6.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=6.0",
+    "pytest-cov>=2.0",
+    "black>=21.0",
+    "flake8>=3.9",
+    "mypy>=0.900",
+]
+
+[project.urls]
+Homepage = "https://github.com/dukeru115/GSV"
+Repository = "https://github.com/dukeru115/GSV"
+Documentation = "https://github.com/dukeru115/GSV/blob/main/README.md"
+"Bug Tracker" = "https://github.com/dukeru115/GSV/issues"
+
+[tool.black]
+line-length = 100
+target-version = ['py38', 'py39', 'py310', 'py311', 'py312']
+
+[tool.mypy]
+python_version = "3.8"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = false

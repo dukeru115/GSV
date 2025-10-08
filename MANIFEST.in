@@ -1,0 +1,15 @@
+# Include documentation files
+include README.md
+include LICENSE
+include CONTRIBUTING.md
+include requirements.txt
+include Summary.md
+
+# Include the paper
+include Global_State_Vector_Multi_Scale_Control_for_Autonomous_AI_Agents.pdf
+
+# Exclude unnecessary files
+global-exclude __pycache__
+global-exclude *.py[co]
+global-exclude .git*
+global-exclude .DS_Store
