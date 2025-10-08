@@ -505,8 +505,7 @@ MIT License - See LICENSE file for details
 
 ## 📞 Contact
 
-- **Timur Urmanov**:
-urmanov.t@gmail.com
+- **Timur Urmanov**: urmanov.t@gmail.com
 - **Kamil Gadeev**: gadeev.kamil@gmail.com
 - **Bakhtier Iusupov**: usupovbahtiayr@gmail.com
 
